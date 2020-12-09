@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<htlm>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>datems</title>
+    </head>
+
+    <body>
+        
+        <div id = "jaar"></div>
+        <div id = "maand"></div>
+        <div id = "dag"></div>
+       <script>
+
+            function toonDatum() {
+                var date = new Date();
+                let yr = document.getElementById("jaar") 
+                let dy = document.getElementById("dag") 
+                let dt = document.getElementById("maand")  
+
+                yr.innerHTML = date.getFullYear();
+                dy.innerHTML = date.getDay();
+                dt.innerHTML = date.getMonth() +1;
+            }
+            
+            
+
+            window.addEventListener('DOMContentLoaded', toonDatum);
+        </script>
+
+    </body>
+</htlm>
